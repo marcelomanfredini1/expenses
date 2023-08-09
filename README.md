@@ -1,5 +1,7 @@
 # Expenses
 
+<img src="/assets/imges/expenses.png">
+
 A new Flutter project.
 
 ## Getting Started
