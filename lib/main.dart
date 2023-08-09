@@ -3,7 +3,7 @@ import 'dart:math';
 import 'components/transaction_form.dart';
 import 'components/transaction_list.dart';
 import 'components/chart.dart';
-import 'components/chart_bar.dart';
+//import 'components/chart_bar.dart';
 import 'models/transaction.dart';
 
 main() => runApp(ExpensesApp());
@@ -138,12 +138,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),*/
             if (_showChart || !isLandScape)
-              Container(
+              SizedBox(
                 child: Chart(_recentTransactions),
                 height: availablelHeight * (isLandScape ? 0.8 : 0.3),
               ),
             if (!_showChart || !isLandScape)
-              Container(
+              SizedBox(
                 child: TransactionList(
                   _transactions,
                   _removeTransaction,

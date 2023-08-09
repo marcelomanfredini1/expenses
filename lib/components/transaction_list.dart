@@ -3,11 +3,15 @@ import '../models/transaction.dart';
 import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
+  final sizedBox = const SizedBox(height: 20);
+
   final List<Transaction> transactions;
   final void Function(String) onRemove;
 
-  const TransactionList(this.transactions, this.onRemove, {Key? key})
-      : super(key: key);
+  const TransactionList(
+    this.transactions,
+    this.onRemove,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +19,13 @@ class TransactionList extends StatelessWidget {
         ? LayoutBuilder(
             builder: (ctx, constraints) => Column(
               children: [
-                SizedBox(height: 20),
+                sizedBox,
                 Text(
                   'Nenhuma Transação Cadastrada!',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                SizedBox(height: 20),
-                Container(
+                sizedBox,
+                SizedBox(
                   height: constraints.maxHeight * 0.6,
                   child: Image.asset(
                     'assets/images/waiting.png',
@@ -62,7 +66,7 @@ class TransactionList extends StatelessWidget {
                   subtitle: Text(
                     DateFormat('d MMM y').format(tr.date),
                   ),
-                  trailing: MediaQuery.of(context).size.width > 400
+                  trailing: MediaQuery.of(context).size.width > 450
                       ? TextButton.icon(
                           onPressed: () => onRemove(tr.id),
                           icon: const Icon(Icons.delete),

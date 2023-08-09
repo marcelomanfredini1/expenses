@@ -71,7 +71,7 @@ class _TransactionFormState extends State<TransactionForm> {
                   labelText: 'Valor (R\$)',
                 ),
               ),
-              Container(
+              SizedBox(
                 height: 70,
                 child: Row(
                   children: [
