@@ -140,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
             if (_showChart || !isLandScape)
               Container(
                 child: Chart(_recentTransactions),
-                height: availablelHeight * (isLandScape ? 0.7 : 0.3),
+                height: availablelHeight * (isLandScape ? 0.8 : 0.3),
               ),
             if (!_showChart || !isLandScape)
               Container(
@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   _transactions,
                   _removeTransaction,
                 ),
-                height: availablelHeight * 0.70,
+                height: availablelHeight * (isLandScape ? 1 : 0.7),
               ),
           ],
         ),
