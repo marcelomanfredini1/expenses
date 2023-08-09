@@ -1,6 +1,6 @@
 # Expenses
 
-<img src="assets/images/expenses.png">
+<img src="assets/images/expenses.png" style="width: 300px; height: 200px;">
 
 A new Flutter project.
 
