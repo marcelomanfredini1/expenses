@@ -1,6 +1,6 @@
 # Expenses
 
-[<img src="../assets/imges/expenses.png">]
+<img src="assets/images/expenses.png">
 
 A new Flutter project.
 
